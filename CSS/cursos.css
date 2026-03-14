@@ -1,0 +1,108 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+background:#0f172a;
+color:white;
+}
+
+/* seção */
+
+.cursos{
+padding:80px 10%;
+text-align:center;
+}
+
+.cursos h1{
+font-size:40px;
+margin-bottom:10px;
+color:#38bdf8;
+}
+
+.descricao{
+margin-bottom:50px;
+color:#cbd5f5;
+}
+
+/* cards */
+
+.cards{
+display:flex;
+justify-content:center;
+gap:30px;
+flex-wrap:wrap;
+}
+
+/* card */
+
+.card{
+background:#1e293b;
+width:320px;
+border-radius:12px;
+box-shadow:0 10px 25px rgba(0,0,0,0.4);
+overflow:hidden;
+transition:0.3s;
+}
+
+.card:hover{
+transform:translateY(-10px);
+}
+
+/* imagem */
+
+.card img{
+width:100%;
+height:180px;
+object-fit:cover;
+}
+
+/* conteúdo */
+
+.card h2{
+margin:15px;
+color:#38bdf8;
+}
+
+.card p{
+margin:0 15px 15px 15px;
+font-size:15px;
+line-height:1.6;
+color:#cbd5f5;
+}
+
+/* botão */
+.container{
+display:flex;
+justify-content:center; /* centro horizontal */
+align-items:center;     /* centro vertical */
+height:100vh;
+}
+
+.bt{
+padding:15px 30px;
+font-size:18px;
+background:#38bdf8;
+color:white;
+border:none;
+border-radius:8px;
+cursor:pointer;
+}
+
+bt :hover{
+background:#0ea5e9;
+}
+
+/* responsivo */
+
+@media(max-width:900px){
+
+.cards{
+flex-direction:column;
+align-items:center;
+}
+
+}
